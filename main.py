@@ -1,6 +1,7 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app = FastAPI()
 @app.get("/")
 async def root():
-    return {"message": "Hello, honey World 3.9"}
+    return {"message": "Hello, honey world 3.9"}
